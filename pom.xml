@@ -28,6 +28,10 @@
                     <artifactId>redisson-spring-boot-starter</artifactId>
                     <groupId>org.redisson</groupId>
                 </exclusion>
+                <exclusion>
+                    <artifactId>druid-spring-boot-starter</artifactId>
+                    <groupId>com.alibaba</groupId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
