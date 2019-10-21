@@ -1,6 +1,7 @@
 package com.overstar.open.export.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.overstar.core.vo.Result;
 import com.overstar.order.export.api.IOrderService;
 import com.overstar.order.export.vo.Ret;
 import lombok.extern.slf4j.Slf4j;
@@ -21,8 +22,8 @@ public class OrderController {
     private IOrderService orderService;
 
     @RequestMapping("/create")
-    public Ret createOrder(){
-        Ret ret = orderService.create(null, null, null);
+    public Result createOrder(){
+        Result ret = orderService.create(null, null, null);
         log.info("order create result = {}", JSON.toJSONString(ret));
         return ret;
     }
